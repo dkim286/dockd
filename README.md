@@ -1,5 +1,3 @@
-# `dockd`
-
 **This is a fork of [`dockd`](https://github.com/libthinkpad/dockd)** with some small fixes:
 
 * Fixed confirmation message spam on `--config`
@@ -9,6 +7,8 @@
 The original `README.md` is included below.
 
 --- 
+
+# dockd - Dock Management Daemon
 
 When moving from Windows to Linux on a lightweight desktop environment like Xfce or LXDE, using the dock is really hard.   
 Usually nothing happens when you insert the dock, and you use xrandr to configure your displays. Then, you remove the ThinkPad from the dock and the screen stays blank.
