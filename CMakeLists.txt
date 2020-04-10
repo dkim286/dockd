@@ -24,8 +24,22 @@ install(TARGETS ${PROJECT_NAME}
         RUNTIME DESTINATION bin)
 
 install(FILES dockd.desktop DESTINATION /etc/xdg/autostart)
-install(FILES dock.hook DESTINATION /etc/dockd)
-install(FILES undock.hook DESTINATION /etc/dockd)
+install(
+	FILES dock.hook 
+	PERMISSIONS 
+	OWNER_READ OWNER_WRITE OWNER_EXECUTE 
+	GROUP_EXECUTE
+	WORLD_EXECUTE
+	DESTINATION /etc/dockd
+)
+install(
+	FILES undock.hook 
+	PERMISSIONS 
+	OWNER_READ OWNER_WRITE OWNER_EXECUTE 
+	GROUP_EXECUTE
+	WORLD_EXECUTE
+	DESTINATION /etc/dockd
+)
 
 set(CPACK_PACKAGE_VENDOR "Ognjen Galic")
 set(CPACK_PACKAGE_VERSION_MAJOR 1)
